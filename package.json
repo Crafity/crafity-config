@@ -1,16 +1,56 @@
 {
 	"name": "crafity-config",
 	"description": "Generic configuration provider",
-	"version": "0.1.0",
+	"version": "0.0.1",
 	"author": "Bart Riemens <briemens@crafity.com>",
+	"homepage": "https://github.com/Crafity/crafity-config#readme",
 	"keywords": ["crafity", "config", "settings", "provider", "configuration"],
-	"repository": "git://github.com/crafity/crafity-modules",
+	"maintainers": [
+		{
+			"name": "Bart Riemens",
+			"email": "briemens@crafity.com",
+			"web": "http://crafity.com/about/bart"
+		},
+		{
+			"name": "Galina Slavova",
+			"email": "galina@crafity.com",
+			"web": "http://crafity.com/about/galina"
+		}
+	],
+	"contributors": [
+		{
+			"name": "Bart Riemens",
+			"email": "briemens@crafity.com",
+			"web": "http://crafity.com/about/bart"
+		},
+		{
+			"name": "Galina Slavova",
+			"email": "galina@crafity.com",
+			"web": "http://crafity.com/about/galina"
+		}
+	],
 	"main": "./config.js",
+	"directories": {},
+	"licenses": [
+		{
+			"type": "The MIT License",
+			"url": "https://github.com/Crafity/crafity-config/blob/master/LICENSE"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/Crafity/crafity-config/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/crafity/crafity-config"
+	},
+	"dependencies": {
+		"crafity-core": "*"
+	},
 	"engines": {
-		"node": "> 0.4.x < 0.7.0"
+		"node": "*"
 	},
-	"scripts" : {
-		"prepublish" : "npm prune"
-	},
-	"dependencies": {}
+	"scripts": {
+		"prepublish": "npm prune"
+	}
 }
