@@ -1,7 +1,7 @@
 {
 	"name": "crafity-config",
-	"description": "Generic configuration provider",
-	"version": "0.0.1",
+	"description": "Configuration file module",
+	"version": "0.0.2",
 	"author": "Bart Riemens <briemens@crafity.com>",
 	"homepage": "https://github.com/Crafity/crafity-config#readme",
 	"keywords": ["crafity", "config", "settings", "provider", "configuration"],
