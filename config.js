@@ -23,8 +23,8 @@ var configurations = {};
 
 /**
  * Open a configuration
- * @param {String} path (Optional) The path to the config file
- * @param {Boolean} info (Optional) Print information
+ * @param {Object} [path] (Optional) The path to the config file
+ * @param {Boolean} [info] (Optional) Print information
  * @param {Function} callback A callback called when config is loaded
  */
 
