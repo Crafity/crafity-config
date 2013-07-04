@@ -47,7 +47,7 @@ exports.open = function (path, info, callback) {
 
 	if (configurations[path]) { return callback(null, configurations[path]); }
 
-	fs.readFile(path, function (err, data) {
+  return fs.readFile(path, function (err, data) {
 		if (err) { return callback(err); }
 		var config = JSON.parse(data.toString())
 			, environment = process.env.NODE_ENV || config.environment
