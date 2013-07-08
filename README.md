@@ -1,9 +1,11 @@
 #Crafity Config
 
 Load in a JSON configuration file quick and easy with Node.JS.
-This module can be used to load in different settings for different targrt environments.
+This module can be used to load in different configuration settings based on a target environments.
+In almost every project there are platform and environment specific settings. Think about paths, port numbers, service, credentials, etc, etc.
+Crafity config provides a simple API and convention to handle this.
 
-An example configuration file for a web server could look something like this.
+Let's take a look at a sample configuration file for a web server. 
 
     {
       "environment": "development",
@@ -26,15 +28,18 @@ An example configuration file for a web server could look something like this.
       }
     }
 
-To load the configuration use the following code. 
+Save this configuration to a file called **config.json**.
+To load this configuration use the following JS code. 
 
+    // Require the crafity config module
     var configuration = require('crafity-config');
-    		
+    
+    // Open the default configuration
     configuration.open(function (err, config) {
       if (err) { throw err; }
-      		  
+      
       // Work with the configuration
-      		  
+      
     });
 
 More about the environments later...
