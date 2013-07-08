@@ -78,9 +78,9 @@ In the example below the production environment will be used:
 More info about the API is coming...
 
 ## The MIT License
-Copyright (c) 2010-2012 Bart Riemens <briemens@crafity.com>
-Copyright (c) 2010-2012 Galina Slavova <galina@crafity.com>
-Copyright (c) 2010-2012 Crafity <info@crafity.com>
+* Copyright (c) 2010-2012 Bart Riemens <briemens@crafity.com>  
+* Copyright (c) 2010-2012 Galina Slavova <galina@crafity.com>  
+* Copyright (c) 2010-2012 Crafity <info@crafity.com>  
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -93,11 +93,11 @@ the following conditions:
 The above copyright notice and this permission notice shall be
 included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+*THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
 
