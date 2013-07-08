@@ -1,25 +1,29 @@
 #Crafity Config
 
-Load in a JSON configuration file quick and easy with Node.JS.
-This module can be used to load in different configuration settings based on a target environments.
-In almost every project there are platform and environment specific settings. Think about paths, port numbers, service, credentials, etc, etc.
+Load in a JSON configuration file quick and easy with Node.JS.  
+This module can be used to load in different configuration settings based on a target environments.  
+In almost every project there are platform and environment specific settings. Think about paths, port numbers, service, credentials, etc, etc.  
 Crafity config provides a simple API and convention to handle this.
 
+##Configuration
 Let's take a look at a sample configuration file for a web server. 
 
     {
       "environment": "development",
       "shared": {
         "webserver": {
+          "ip": "127.0.0.1",
           "port": 4242,
           "gzip": true
         }
       },
       "development": {
         "webserver": {
-          "ip": "127.0.0.1"
+          "gzip": false,
+          "debug": true
         }
       },
+      "test": {},
       "production": {
         "webserver": {
           "port": 80
@@ -29,6 +33,8 @@ Let's take a look at a sample configuration file for a web server.
     }
 
 Save this configuration to a file called **config.json**.
+
+##The code
 To load this configuration use the following JS code. 
 
     // Require the crafity config module
@@ -42,7 +48,35 @@ To load this configuration use the following JS code.
       
     });
 
-More about the environments later...
+##Environments
+So what are these environments and how do you configure them?   
+In the example JSON above you can see three environments: Shared, development and production.  
+Only the shared environment is a special case, the other two are made up.
+
+###Shared environment
+As the names says the shared environment shares it settings with the other defined environments. 
+Often there are settings that do not differ from one environment to the next or most of the environments 
+share the same setting except for a few.  
+By default an environment gets all the same settings as the shared one. The environment specific settings are then added or overwritten.  
+
+In the sample JSON configuration above you can see the following scenarios:
+* The development environment gets all the shared settings, but disables gzip explicitly and adds a debug setting.
+* The test environment is exactly the same as shared environment.
+* The production environment get the shared settings, but changes the IP and Port.
+
+###Select an environment
+When a configuration file is loaded the environment property will be used to set the default environment.
+In the sample above the development environment will be used by default.    
+
+To overide the default environment a NODE_ENV variable can be specified on the command line to force a specific environment.
+In the example below the production environment will be used:
+
+    ~ NODE_ENV=production node main.js 
+
+*NB. The environment name is case sensitive.*
+
+##The API
+More info about the API is coming...
 
 > (The MIT License)
 > 
