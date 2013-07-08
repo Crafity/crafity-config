@@ -31,7 +31,7 @@ Let's take a look at a sample configuration file for a web server.
     }
 
 Save this configuration to a file called **config.json** and place it in the root of your application. 
-Of course another name and path can be used as well, but that needs to be specified explicitly (see API section).
+Of course another name and path can be used as well, but that needs to be specified explicitly (see [The API][#the-api] section).
 
 ##The code
 To load the config.json data use the following JS code. 
@@ -78,9 +78,9 @@ In the example below the production environment will be used:
 More info about the API is coming...
 
 ## The MIT License
-* Copyright (c) 2010-2012 Bart Riemens <briemens@crafity.com>  
-* Copyright (c) 2010-2012 Galina Slavova <galina@crafity.com>  
-* Copyright (c) 2010-2012 Crafity <info@crafity.com>  
+* Copyright (c) 2013 Bart Riemens <briemens@crafity.com>  
+* Copyright (c) 2013 Galina Slavova <galina@crafity.com>  
+* Copyright (c) 2013 Crafity <info@crafity.com>  
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
