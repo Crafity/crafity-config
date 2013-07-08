@@ -1,9 +1,7 @@
 #Crafity Config
 
-Load in a JSON configuration file quick and easy with Node.JS.  
 This module can be used to load in different configuration settings based on a target environments.  
-In almost every project there are platform and environment specific settings. Think about paths, port numbers, service, credentials, etc, etc.  
-Crafity config provides a simple API and convention to handle this.
+In almost every project there are platform and environment specific settings. Think about *paths, port numbers, databases and web services, credentials, etc, etc*.  
 
 ##Configuration
 Let's take a look at a sample configuration file for a web server. 
@@ -32,10 +30,11 @@ Let's take a look at a sample configuration file for a web server.
       }
     }
 
-Save this configuration to a file called **config.json**.
+Save this configuration to a file called **config.json** and place it in the root of your application. 
+Of course another name and path can be used as well, but that needs to be specified explicitly (see API section).
 
 ##The code
-To load this configuration use the following JS code. 
+To load the config.json data use the following JS code. 
 
     // Require the crafity config module
     var configuration = require('crafity-config');
@@ -54,10 +53,10 @@ In the example JSON above you can see three environments: Shared, development an
 Only the shared environment is a special case, the other two are made up.
 
 ###Shared environment
-As the names says the shared environment shares it settings with the other defined environments. 
+As the names states the shared environment shares its settings with the other custom defined environments. 
 Often there are settings that do not differ from one environment to the next or most of the environments 
-share the same setting except for a few.  
-By default an environment gets all the same settings as the shared one. The environment specific settings are then added or overwritten.  
+share the same setting except for a few. To prevent a lot of duplication the shared environment can be used.
+By default an environment inherits all the shared settings. The environment specific settings are then added or overwritten.  
 
 In the sample JSON configuration above you can see the following scenarios:
 * The development environment gets all the shared settings, but disables gzip explicitly and adds a debug setting.
@@ -78,28 +77,27 @@ In the example below the production environment will be used:
 ##The API
 More info about the API is coming...
 
-> (The MIT License)
-> 
-> Copyright (c) 2010-2012 Bart Riemens <briemens@crafity.com>
-> Copyright (c) 2010-2012 Galina Slavova <galina@crafity.com>
-> Copyright (c) 2010-2012 Crafity <info@crafity.com>
-> 
-> Permission is hereby granted, free of charge, to any person obtaining
-> a copy of this software and associated documentation files (the
-> 'Software'), to deal in the Software without restriction, including
-> without limitation the rights to use, copy, modify, merge, publish,
-> distribute, sublicense, and/or sell copies of the Software, and to
-> permit persons to whom the Software is furnished to do so, subject to
-> the following conditions:
-> 
-> The above copyright notice and this permission notice shall be
-> included in all copies or substantial portions of the Software.
-> 
-> THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-> EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-> MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-> IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-> CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-> TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## The MIT License
+Copyright (c) 2010-2012 Bart Riemens <briemens@crafity.com>
+Copyright (c) 2010-2012 Galina Slavova <galina@crafity.com>
+Copyright (c) 2010-2012 Crafity <info@crafity.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
