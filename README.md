@@ -1,4 +1,4 @@
-#Crafity Config [![Dependency status](https://david-dm.org/crafity/crafity-config.png)](https://david-dm.org/crafity/crafity-config) [![Travis Build Status](https://travis-ci.org/Crafity/crafity-config.png?branch=master)](https://travis-ci.org/Crafity/crafity-config)  
+#Crafity Config [![Dependency status](https://david-dm.org/crafity/crafity-config.png)](https://david-dm.org/crafity/crafity-config) [![Travis Build Status](https://travis-ci.org/Crafity/crafity-config.png?branch=master)](https://travis-ci.org/Crafity/crafity-config) [![NPM Module version](https://badge.fury.io/js/crafity-config.png)](http://badge.fury.io/js/crafity-config)  
 
 This module can be used to load in different configuration settings based on a target environments.  
 In almost every project there are platform and environment specific settings. Think about *paths, port numbers, databases and web services, credentials, etc, etc*.  
@@ -7,7 +7,7 @@ In almost every project there are platform and environment specific settings. Th
 The easiest way to install Crafity Config is via NPM
 
     ~ npm install crafity-config
-    
+  
 Or by cloning this repository
 
     ~ git clone https://github.com/Crafity/crafity-config.git
