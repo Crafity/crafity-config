@@ -52,6 +52,7 @@
 		"node": "*"
 	},
 	"scripts": {
-		"prepublish": "npm prune"
+		"prepublish": "npm prune",
+    "test": "./runtests.sh"
 	}
 }
