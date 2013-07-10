@@ -45,7 +45,8 @@
 		"url": "https://github.com/crafity/crafity-config"
 	},
 	"dependencies": {
-		"crafity-core": "*"
+		"crafity-core": "*",
+    "crafity-jstest": "*"
 	},
 	"engines": {
 		"node": "*"
