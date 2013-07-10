@@ -4,3 +4,11 @@ node_js:
   - "0.10"
   - "0.8"
   - "0.6"
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#crafity"
+    channel_key: 'genuine'
+  email:
+    recipients:
+      - travis@crafity.com
