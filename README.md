@@ -6,7 +6,7 @@ In almost every project there are platform and environment specific settings. Th
 ##Installation
 The easiest way to install Crafity Config is via NPM
 
-    npm install crafity-config
+    ~ npm install crafity-config
     
 Or by cloning this repository
 
