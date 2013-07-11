@@ -6,6 +6,7 @@ var jstest = require('crafity-jstest').createContext("Crafity Config")
 jstest.run({
   "Require the crafity config module": function () {
     var config = require('../config.js');
+    assert.fail("Oh no! Testing Travis notifications");
   }
 });
 
