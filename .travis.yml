@@ -7,8 +7,7 @@ node_js:
 notifications:
   irc:
     channels:
-      - "irc.freenode.org#crafity"
-    channel_key: 'genuine'
+      - "irc.freenode.org#crafity-ci"
   email:
     recipients:
       - travis@crafity.com
