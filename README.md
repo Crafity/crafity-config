@@ -17,29 +17,31 @@ Or by cloning this repository
 ##Configuration
 Let's take a look at a sample configuration file for a web server. 
 
-    {
-      "environment": "development",
-      "shared": {
-        "webserver": {
-          "ip": "127.0.0.1",
-          "port": 4242,
-          "gzip": true
-        }
-      },
-      "development": {
-        "webserver": {
-          "gzip": false,
-          "debug": true
-        }
-      },
-      "test": {},
-      "production": {
-        "webserver": {
-          "port": 80
-          "ip": "0.0.0.0"
-        }
-      }
+```json
+{
+  "environment": "development",
+  "shared": {
+    "webserver": {
+      "ip": "127.0.0.1",
+      "port": 4242,
+      "gzip": true
     }
+  },
+  "development": {
+    "webserver": {
+      "gzip": false,
+      "debug": true
+    }
+  },
+  "test": {},
+  "production": {
+    "webserver": {
+      "port": 80
+      "ip": "0.0.0.0"
+    }
+  }
+}
+```
 
 Save this configuration to a file called **config.json** and place it in the root of your application. 
 Of course another name and path can be used as well, but that needs to be specified explicitly (see [The API](#the-api) section).
@@ -47,16 +49,18 @@ Of course another name and path can be used as well, but that needs to be specif
 ##The code
 To load the config.json data use the following JS code. 
 
-    // Require the crafity config module
-    var configuration = require('crafity-config');
-    
-    // Open the default configuration
-    configuration.open(function (err, config) {
-      if (err) { throw err; }
-      
-      // Work with the configuration
-      
-    });
+```js
+// Require the crafity config module
+var configuration = require('crafity-config');
+
+// Open the default configuration
+configuration.open(function (err, config) {
+  if (err) { throw err; }
+  
+  // Work with the configuration
+  
+});
+```
 
 ##Environments
 So what are these environments and how do you configure them?   
