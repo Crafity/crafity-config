@@ -97,7 +97,8 @@ More info about the API is coming...
 
 ##Contact
 * Issues: [Github](https://github.com/Crafity/crafity-config/issues)
-* IRC: [IRC Link](irc://irc.freenode.net:6667/crafity-lounge) [Webchat](http://webchat.freenode.net?channels=crafity-lounge&uio=OT10cnVlJjExPTUx91)
+* IRC Lounge: [IRC Link](irc://irc.freenode.net:6667/crafity-lounge) [Webchat](http://webchat.freenode.net?channels=crafity-lounge&uio=OT10cnVlJjExPTUx91)
+* IRC CI: [IRC Link](irc://irc.freenode.net:6667/crafity-ci) [Webchat](http://webchat.freenode.net?channels=crafity-ci&uio=OT10cnVlJjExPTUx91)
 * Website: [Crafity](http://crafity.com)
 
 ## The MIT License
