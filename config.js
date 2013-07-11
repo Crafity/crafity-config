@@ -56,7 +56,8 @@ exports.open = function (path, info, callback) {
 
 		if (!environment) {
 			return callback(new Error("No configuration environment is set in the configuration file or NODE_ENV."));
-		} else if (!config[environment]) {
+		} 
+    if (!config[environment]) {
 			return callback(new Error("Environment '" + environment + "' is not defined in the configuration."));
 		}
 
