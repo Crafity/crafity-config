@@ -95,6 +95,11 @@ In the example below the production environment will be used:
 ##The API
 More info about the API is coming...
 
+##Contact
+Issues: [Github](https://github.com/Crafity/crafity-config/issues)
+IRC: [Freenode](irc://irc.freenode.net:6667/crafity-lounge)
+Website: [Crafity](http://crafity.com)
+
 ## The MIT License
 * Copyright (c) 2013 Bart Riemens <briemens@crafity.com>  
 * Copyright (c) 2013 Galina Slavova <galina@crafity.com>  
