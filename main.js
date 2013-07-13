@@ -16,6 +16,18 @@ var fs = require('fs')
 	, objects = core.objects;
 
 /**
+ * Module name.
+ */
+
+module.exports.fullname = "crafity-config";
+
+/**
+ * Module version.
+ */
+
+module.exports.version = '0.0.3';
+
+/**
  * Loaded configuration
  */
 
