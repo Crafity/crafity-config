@@ -18,8 +18,6 @@ Or by cloning this repository
 ~ npm install
 ```
 
-Save this configuration to a file called **config.json** and place it in the root of your application. 
-Of course another name and path can be used as well, but that needs to be specified explicitly (see [The API](#the-api) section).
 
 ```
 
