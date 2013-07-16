@@ -95,7 +95,7 @@ In the example below the production environment will be used:
 ##The API
 More info about the API is coming...
 
-##Contact
+##Links
 * Issues: [Github](https://github.com/Crafity/crafity-config/issues)
 * IRC Lounge: [IRC Link](irc://irc.freenode.net:6667/crafity-lounge) [Webchat](http://webchat.freenode.net?channels=crafity-lounge&uio=OT10cnVlJjExPTUx91)
 * IRC CI: [IRC Link](irc://irc.freenode.net:6667/crafity-ci) [Webchat](http://webchat.freenode.net?channels=crafity-ci&uio=OT10cnVlJjExPTUx91)
