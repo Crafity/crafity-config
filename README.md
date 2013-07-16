@@ -94,7 +94,9 @@ In the sample above the development environment will be used by default.
 To overide the default environment a NODE_ENV variable can be specified on the command line to force a specific environment.
 In the example below the production environment will be used:
 
-    ~ NODE_ENV=production node main.js 
+```sh
+~ NODE_ENV=production node main.js 
+```
 
 *NB. The environment name is case sensitive.*
 
