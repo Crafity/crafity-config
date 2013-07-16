@@ -101,10 +101,12 @@ More info about the API is coming...
 * IRC CI: [IRC Link](irc://irc.freenode.net:6667/crafity-ci) [Webchat](http://webchat.freenode.net?channels=crafity-ci&uio=OT10cnVlJjExPTUx91)
 * Website: [Crafity](http://crafity.com)
 
-## The MIT License
-* Copyright (c) 2013 Bart Riemens <briemens@crafity.com>  
-* Copyright (c) 2013 Galina Slavova <galina@crafity.com>  
-* Copyright (c) 2013 Crafity <info@crafity.com>  
+## License
+(The MIT License)  
+
+* Copyright (c) 2010-2013 Bart Riemens <briemens@crafity.com>  
+* Copyright (c) 2010-2013 Galina Slavova <galina@crafity.com>  
+* Copyright (c) 2010-2013 Crafity <info@crafity.com>  
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
