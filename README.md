@@ -18,8 +18,42 @@ Or by cloning this repository
 ~ npm install
 ```
 
+##Public API
+To load the config.json data use the following JS code. 
 
+```js
+// Require the crafity config module
+var configuration = require('crafity-config');
+
+// Open the default configuration
+configuration.open(function (err, config) {
+  if (err) { throw err; }
+  
+  // Work with the configuration
+  
+});
 ```
+
+
+###.open([path], [info], callback)
+* `path` String The JSON configuration file to load.
+* `info` Boolean Print verbose output to the console
+* `callback` Function
+
+`path` defaults to `./config.json` and `info` defaults to `false`.  
+
+Opens a configuration file using the `path` argument and calls the
+
+Here is an example of loading a config file and printing the status to the console:
+```js
+var configuration = require('crafity-config');
+
+configuration.open("config.json", true, function (err, config) {
+  if (err) { throw err; }
+  console.log(config)
+});
+```
+
 
 ##Configuration
 Let's take a look at a sample configuration file for a web server. 
@@ -53,22 +87,6 @@ Let's take a look at a sample configuration file for a web server.
 Save this configuration to a file called **config.json** and place it in the root of your application. 
 Of course another name and path can be used as well, but that needs to be specified explicitly (see [The API](#the-api) section).
 
-##The code
-To load the config.json data use the following JS code. 
-
-```js
-// Require the crafity config module
-var configuration = require('crafity-config');
-
-// Open the default configuration
-configuration.open(function (err, config) {
-  if (err) { throw err; }
-  
-  // Work with the configuration
-  
-});
-```
-
 ##Environments
 So what are these environments and how do you configure them?   
 In the example JSON above you can see three environments: **Shared**, **development** and **production**.  
@@ -97,9 +115,6 @@ In the example below the production environment will be used:
 ```
 
 *NB. The environment name is case sensitive.*
-
-##The API
-More info about the API is coming...
 
 ##Links
 * Issues: [Github](https://github.com/Crafity/crafity-config/issues)
