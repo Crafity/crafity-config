@@ -4,17 +4,23 @@ This module can be used to load in different configuration settings based on a t
 In almost every project there are platform and environment specific settings. Think about *paths, port numbers, databases and web services, credentials, etc, etc*.  
 
 ##Installation
-The easiest way to install Crafity Config is via NPM
+Install Crafity Config is via NPM
 
 ```sh
-npm install crafity-config
+~ npm install crafity-config
 ```
+
 Or by cloning this repository
 
 ```sh
-git clone https://github.com/Crafity/crafity-config.git
-cd crafity-config
-npm install
+~ git clone https://github.com/Crafity/crafity-config.git
+~ cd crafity-config
+~ npm install
+```
+
+Save this configuration to a file called **config.json** and place it in the root of your application. 
+Of course another name and path can be used as well, but that needs to be specified explicitly (see [The API](#the-api) section).
+
 ```
 
 ##Configuration
