@@ -25,7 +25,7 @@ module.exports.fullname = "crafity-config";
  * Module version.
  */
 
-module.exports.version = '0.0.3';
+module.exports.version = '0.0.4';
 
 /**
  * Loaded configuration
