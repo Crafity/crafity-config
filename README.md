@@ -73,7 +73,7 @@ configuration.open(function (err, config) {
 
 ##Environments
 So what are these environments and how do you configure them?   
-In the example JSON above you can see three environments: Shared, development and production.  
+In the example JSON above you can see three environments: **Shared**, **development** and **production**.  
 Only the shared environment is a special case, the other two are made up.
 
 ###Shared environment
