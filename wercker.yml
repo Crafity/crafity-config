@@ -1,5 +1,5 @@
 # wercker.yml file
-box: wercker/node
+box: wercker/nodejs
 build:
   steps:
       # A step that executes `npm install` command
