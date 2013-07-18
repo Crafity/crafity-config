@@ -1,4 +1,4 @@
-/*jslint node: true, bitwise: true, unparam: true, maxerr: 50, white: true, stupid: true */
+/*jslint node: true, white: true */
 "use strict";
 
 /*!
@@ -14,15 +14,20 @@
  */
 
 var jstest = require('crafity-jstest').createContext("Crafity Config")
-  , core = require('crafity-core')
   , assert = jstest.assert
   ;
 
+/**
+ * Run the tests
+ */
+
 jstest.run({
+  
   "Require the crafity config module": function () {
     var config = require('../main.js');
     assert.isFunction(config.open, "Expected an open function");
   }
+  
 });
 
 

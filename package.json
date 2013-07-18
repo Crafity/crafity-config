@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Bart Riemens <briemens@crafity.com>",
   "homepage": "https://github.com/Crafity/crafity-config#readme",
-  "keywords": ["crafity", "config", "settings", "provider", "configuration"],
+  "keywords": [ "crafity", "config", "settings", "provider", "configuration" ],
   "maintainers": [
     {
       "name": "Bart Riemens",
