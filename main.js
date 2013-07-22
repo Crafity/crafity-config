@@ -37,8 +37,8 @@ var configurations = {};
 
 /**
  * Open a configuration
- * @param {String|Object} [path] (Optional) The path to the config file
- * @param {Boolean} [info] (Optional) Print information
+ * @param {String|Function|Object} [path] (Optional) The path to the config file
+ * @param {Boolean|Function} [info] (Optional) Print information
  * @param {Function} callback A callback called when config is loaded
  */
 
