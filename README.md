@@ -1,9 +1,9 @@
-#Crafity Config [![Dependency status](https://david-dm.org/crafity/crafity-config.png)](https://david-dm.org/crafity/crafity-config) [![Travis Build Status](https://travis-ci.org/Crafity/crafity-config.png?branch=master)](https://travis-ci.org/Crafity/crafity-config) [![NPM Module version](https://badge.fury.io/js/crafity-config.png)](http://badge.fury.io/js/crafity-config)  
+# Crafity Config [![Dependency status](https://david-dm.org/crafity/crafity-config.png)](https://david-dm.org/crafity/crafity-config) [![Travis Build Status](https://travis-ci.org/Crafity/crafity-config.png?branch=master)](https://travis-ci.org/Crafity/crafity-config) [![NPM Module version](https://badge.fury.io/js/crafity-config.png)](http://badge.fury.io/js/crafity-config)  
 
 This module can be used to load in different configuration settings based on a target environments.  
 In almost every project there are platform and environment specific settings. Think about *paths, port numbers, databases and web services, credentials, etc, etc*.  
 
-##Installation
+## Installation
 Install Crafity Config is via NPM
 
 ```sh
@@ -18,7 +18,7 @@ Or by cloning this repository
 ~ npm install
 ```
 
-##Public API
+## Public API
 To load the config.json data use the following JS code. 
 
 ```js
@@ -35,7 +35,7 @@ configuration.open(function (err, config) {
 ```
 
 
-###.open([path], [info], callback)
+### .open([path], [info], callback)
 * `path` String The JSON configuration file to load.
 * `info` Boolean Print verbose output to the console
 * `callback` Function
@@ -55,7 +55,7 @@ configuration.open("config.json", true, function (err, config) {
 ```
 
 
-##Configuration
+## Configuration
 Let's take a look at a sample configuration file for a web server. 
 
 ```json
@@ -87,12 +87,12 @@ Let's take a look at a sample configuration file for a web server.
 Save this configuration to a file called **config.json** and place it in the root of your application. 
 Of course another name and path can be used as well, but that needs to be specified explicitly (see [The API](#the-api) section).
 
-##Environments
+## Environments
 So what are these environments and how do you configure them?   
 In the example JSON above you can see three environments: **Shared**, **development** and **production**.  
 Only the shared environment is a special case, the other two are made up.
 
-###Shared environment
+### Shared environment
 As the names states the shared environment shares its settings with the other custom defined environments. 
 Often there are settings that do not differ from one environment to the next or most of the environments 
 share the same setting except for a few. To prevent a lot of duplication the shared environment can be used.
@@ -116,7 +116,7 @@ In the example below the production environment will be used:
 
 *NB. The environment name is case sensitive.*
 
-##Links
+## Links
 * Issues: [Github](https://github.com/Crafity/crafity-config/issues)
 * IRC Lounge: [IRC Link](irc://irc.freenode.net:6667/crafity-lounge) [Webchat](http://webchat.freenode.net?channels=crafity-lounge&uio=OT10cnVlJjExPTUx91)
 * IRC CI: [IRC Link](irc://irc.freenode.net:6667/crafity-ci) [Webchat](http://webchat.freenode.net?channels=crafity-ci&uio=OT10cnVlJjExPTUx91)
