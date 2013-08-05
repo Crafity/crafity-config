@@ -7,15 +7,15 @@ In almost every project there are platform and environment specific settings. Th
 Install Crafity Config is via NPM
 
 ```sh
-~ npm install crafity-config
+$ npm install crafity-config
 ```
 
 Or by cloning this repository
 
 ```sh
-~ git clone https://github.com/Crafity/crafity-config.git
-~ cd crafity-config
-~ npm install
+$ git clone https://github.com/Crafity/crafity-config.git
+$ cd crafity-config
+$ npm install
 ```
 
 ## Public API
@@ -111,7 +111,7 @@ To overide the default environment a NODE_ENV variable can be specified on the c
 In the example below the production environment will be used:
 
 ```sh
-~ NODE_ENV=production node main.js 
+$ NODE_ENV=production node main.js 
 ```
 
 *NB. The environment name is case sensitive.*
